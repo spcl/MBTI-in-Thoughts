@@ -1,0 +1,3 @@
+You will be provided a writing prompt to generate a story. Write an elaborate story in 500 words, and include creative vocabulary and a plot. Only output the information asked, in the JSON format. Don't say anything that is not asked.
+{format_instructions}
+{story_prompt}

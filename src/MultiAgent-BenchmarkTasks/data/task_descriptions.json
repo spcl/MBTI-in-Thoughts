@@ -1,0 +1,1162 @@
+{
+    "test": {
+        "test": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", which action should be taken?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ]
+        }
+    },
+    "Blablablab/SOCKET": {
+        "talkdown-pairs": {
+            "type": "PAIR",
+            "question": "For the quote \"{text_a}\" and its context \"{text_b}\", is the quote condescending?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "hahackathon#humor_rating": {
+            "type": "REG",
+            "question": "Determine the degree of humor of the given sentence: \"{text}\". The score should be ranging from 0.0 to 5.0, and can be a decimal. 0 is not humorous at all, and 5 is very humorous.",
+            "options": []
+        },
+        "hahackathon#is_humor": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it humorous?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "humor-pairs": {
+            "type": "PAIR",
+            "question": "The first sentence is \"{text_a}\". The second sentence is \"{text_b}\". Is the first sentence funnier than the second sentence?",
+            "options": [
+                "Yes",
+                "No"
+            ]
+        },
+        "sarc": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it sarcastic?",
+            "options": [
+                "Yes",
+                "No"
+            ]
+        },
+        "tweet_irony": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it ironic?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "contextual-abuse#IdentityDirectedAbuse": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it identity directed abuse?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "contextual-abuse#PersonDirectedAbuse": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it person directed abuse?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "hahackathon#offense_rating": {
+            "type": "REG",
+            "question": "Determine the degree of offense of the given sentence: \"{text}\". The score should be ranging from 0.0 to 5.0, and can be a decimal.",
+            "options": []
+        },
+        "hasbiasedimplication": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", does it imply some biases?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "hateoffensive": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it hate or offensive?",
+            "options": [
+                "Hate",
+                "Offensive",
+                "Neither"
+            ]
+        },
+        "implicit-hate#explicit_hate": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it explicit hate?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "implicit-hate#implicit_hate": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it implicitly hateful?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "implicit-hate#incitement_hate": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it a hateful incitement to act?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "implicit-hate#inferiority_hate": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it inferiority hate?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "implicit-hate#stereotypical_hate": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it a hateful message involving stereotypes?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "implicit-hate#threatening_hate": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it hateful in a threatening way?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "implicit-hate#white_grievance_hate": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it white grievance hate?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "intentyn": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it intentional?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "jigsaw#identity_hate": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it identity hate?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "jigsaw#insult": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it an insult?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "jigsaw#obscene": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it obscene?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "jigsaw#severe_toxic": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it severely toxic?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "jigsaw#threat": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it a threat?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "jigsaw#toxic": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it toxic?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "offensiveyn": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it offensive?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "sexyn": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it sexist?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "toxic-span": {
+            "type": "SPAN",
+            "question": "In the sentence: \"{text}\", which part of it can be identified as toxic?",
+            "options": []
+        },
+        "tweet_offensive": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it offensive?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "crowdflower": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", what is its emotion?",
+            "options": [
+                "empty",
+                "sadness",
+                "enthusiasm",
+                "neutral",
+                "worry",
+                "love",
+                "fun",
+                "hate",
+                "happiness",
+                "relief",
+                "boredom",
+                "surprise",
+                "anger"
+            ]
+        },
+        "dailydialog": {
+            "type": "CLS",
+            "question": "For the given conversation, \"{text}\", what is its emotion?",
+            "options": [
+                "no emotion",
+                "anger",
+                "disgust",
+                "fear",
+                "happiness",
+                "sadness",
+                "surprise"
+            ]
+        },
+        "emobank#arousal": {
+            "type": "REG",
+            "question": "Given the VAD model of emotion, determine the degree of arousal of the given sentence: \"{text}\". The score should be ranging from 0.0 to 5.0, and can be a decimal.",
+            "options": []
+        },
+        "emobank#dominance": {
+            "type": "REG",
+            "question": "Given the VAD model of emotion, determine the degree of dominance of the given sentence: \"{text}\". The score should be ranging from 0.0 to 5.0, and can be a decimal.",
+            "options": []
+        },
+        "emobank#valence": {
+            "type": "REG",
+            "question": "Given the VAD model of emotion, determine the degree of valence of the given sentence: \"{text}\". The score should be ranging from 0.0 to 5.0, and can be a decimal.",
+            "options": []
+        },
+        "emotion-span": {
+            "type": "SPAN",
+            "question": "In the sentence: \"{text}\", which part of it expresses strong emotion?",
+            "options": []
+        },
+        "empathy#distress": {
+            "type": "REG",
+            "question": "Determine the degree of distress of the given sentence: \"{text}\". The score should be ranging from 0.0 to 7.0, and can be a decimal.",
+            "options": []
+        },
+        "empathy#distress_bin": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it showing distress?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "same-side-pairs": {
+            "type": "PAIR",
+            "question": "For the sentences: \"{text_a}\" and \"{text_b}\", are they on the same side?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "sentitreebank": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it positive?",
+            "options": [
+                "Yes",
+                "No"
+            ]
+        },
+        "tweet_emoji": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", what is the emoji that can be added to it?",
+            "options": [
+                "\u2764",
+                "\ud83d\ude0d",
+                "\ud83d\ude02",
+                "\ud83d\udc95",
+                "\ud83d\udd25",
+                "\ud83d\ude0a",
+                "\ud83d\ude0e",
+                "\u2728",
+                "\ud83d\udc99",
+                "\ud83d\ude18",
+                "\ud83d\udcf7",
+                "\ud83c\uddfa\ud83c\uddf8",
+                "\u2600",
+                "\ud83d\udc9c",
+                "\ud83d\ude09",
+                "\ud83d\udcaf",
+                "\ud83d\ude01",
+                "\ud83c\udf84",
+                "\ud83d\udcf8",
+                "\ud83d\ude1c"
+            ]
+        },
+        "tweet_emotion": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", what is its emotion?",
+            "options": [
+                "anger",
+                "joy",
+                "optimism",
+                "sadness"
+            ]
+        },
+        "tweet_sentiment": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", what is its sentiment?",
+            "options": [
+                "negative",
+                "neutral",
+                "positive"
+            ]
+        },
+        "complaints": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it a complaint?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "empathy#empathy": {
+            "type": "REG",
+            "question": "Determine the degree of empathy of the given sentence: \"{text}\". The score should be ranging from 0.0 to 7.0, and can be a decimal.",
+            "options": []
+        },
+        "empathy#empathy_bin": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it expressing empathy?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "hayati_politeness": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it polite?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "questionintimacy": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", how intimate do you think it is?",
+            "options": [
+                "Very intimate",
+                "Intimate",
+                "Somewhat intimate",
+                "Not very intimate",
+                "Not intimate",
+                "Not intimate at all"
+            ]
+        },
+        "stanfordpoliteness": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it polite?",
+            "options": [
+                "Yes",
+                "No"
+            ]
+        },
+        "bragging#brag_achievement": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it bragging about an achievement?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "bragging#brag_action": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it bragging about an action?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "bragging#brag_possession": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it bragging about a possession?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "bragging#brag_trait": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it bragging about a trait?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "hypo-l": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it a hyperbole?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "neutralizing-bias-pairs": {
+            "type": "PAIR",
+            "question": "For the sentences: \"{text_a}\" and \"{text_b}\", which one is biased?",
+            "options": [
+                "the first sentence is biased",
+                "the second sentence is biased"
+            ]
+        },
+        "propaganda-span": {
+            "type": "SPAN",
+            "question": "In the sentence: \"{text}\", which part of it can be identified as the propaganda?",
+            "options": []
+        },
+        "rumor#rumor_bool": {
+            "type": "CLS",
+            "question": "For the sentence: \"{text}\", is it a rumor?",
+            "options": [
+                "No",
+                "Yes"
+            ]
+        },
+        "two-to-lie#receiver_truth": {
+            "type": "CLS",
+            "question": "For the sentence :\"{text}\", will it be perceived as a lie by the receiver?",
+            "options": [
+                "Yes",
+                "No"
+            ]
+        },
+        "two-to-lie#sender_truth": {
+            "type": "CLS",
+            "question": "For the sentence :\"{text}\", is the sender intending to tell a lie?",
+            "options": [
+                "Yes",
+                "No"
+            ]
+        }
+    },
+    "hails/bigbench": {
+        "abstract_narrative_understanding_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "anachronisms_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "analogical_similarity_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "analytic_entailment_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "arithmetic_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "ascii_word_recognition_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "authorship_verification_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "auto_categorization_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "auto_debugging_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "bbq_lite_json_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "bridging_anaphora_resolution_barqa_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "causal_judgment_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "cause_and_effect_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "checkmate_in_one_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "chess_state_tracking_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "chinese_remainder_theorem_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "cifar10_classification_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "code_line_description_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "codenames_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "color_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "common_morpheme_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "conceptual_combinations_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "conlang_translation_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "contextual_parametric_knowledge_conflicts_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "crash_blossom_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "crass_ai_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "cryobiology_spanish_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "cryptonite_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "cs_algorithms_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "dark_humor_detection_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "date_understanding_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "disambiguation_qa_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "discourse_marker_prediction_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "disfl_qa_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "dyck_languages_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "elementary_math_qa_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "emoji_movie_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "emojis_emotion_prediction_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "empirical_judgments_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "english_proverbs_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "english_russian_proverbs_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "entailed_polarity_hindi_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "entailed_polarity_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "epistemic_reasoning_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "evaluating_information_essentiality_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "fact_checker_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "fantasy_reasoning_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "few_shot_nlg_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "figure_of_speech_detection_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "formal_fallacies_syllogisms_negation_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "gem_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "gender_inclusive_sentences_german_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "general_knowledge_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "geometric_shapes_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "goal_step_wikihow_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "gre_reading_comprehension_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "hhh_alignment_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "hindi_question_answering_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "hindu_knowledge_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "hinglish_toxicity_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "human_organs_senses_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "hyperbaton_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "identify_math_theorems_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "identify_odd_metaphor_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "implicatures_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "implicit_relations_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "intent_recognition_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "international_phonetic_alphabet_nli_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "international_phonetic_alphabet_transliterate_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "intersect_geometry_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "irony_identification_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "kanji_ascii_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "kannada_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "key_value_maps_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "known_unknowns_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "language_games_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "language_identification_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "linguistic_mappings_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "linguistics_puzzles_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "list_functions_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "logic_grid_puzzle_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "logical_args_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "logical_deduction_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "logical_fallacy_detection_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "logical_sequence_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "mathematical_induction_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "matrixshapes_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "metaphor_boolean_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "metaphor_understanding_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "minute_mysteries_qa_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "misconceptions_russian_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "misconceptions_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "mnist_ascii_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "modified_arithmetic_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "moral_permissibility_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "movie_dialog_same_or_different_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "movie_recommendation_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "mult_data_wrangling_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "multiemo_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "natural_instructions_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "navigate_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "nonsense_words_grammar_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "novel_concepts_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "object_counting_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "odd_one_out_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "operators_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "paragraph_segmentation_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "parsinlu_qa_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "parsinlu_reading_comprehension_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "penguins_in_a_table_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "periodic_elements_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "persian_idioms_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "phrase_relatedness_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "physical_intuition_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "physics_questions_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "physics_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "play_dialog_same_or_different_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "polish_sequence_labeling_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "presuppositions_as_nli_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "qa_wikidata_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "question_selection_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "real_or_fake_text_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "reasoning_about_colored_objects_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "repeat_copy_logic_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "rephrase_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "riddle_sense_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "ruin_names_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "salient_translation_error_detection_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "scientific_press_release_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "semantic_parsing_in_context_sparc_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "semantic_parsing_spider_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "sentence_ambiguity_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "similarities_abstraction_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "simp_turing_concept_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "simple_arithmetic_json_multiple_choice_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "simple_arithmetic_json_subtasks_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "simple_arithmetic_json_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "simple_arithmetic_multiple_targets_json_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "simple_ethical_questions_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "simple_text_editing_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "snarks_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "social_iqa_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "social_support_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "sports_understanding_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "strange_stories_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "strategyqa_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "sufficient_information_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "suicide_risk_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "swahili_english_proverbs_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "swedish_to_german_proverbs_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "symbol_interpretation_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "temporal_sequences_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "tense_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "timedial_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "topical_chat_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "tracking_shuffled_objects_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "understanding_fables_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "undo_permutation_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "unit_conversion_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "unit_interpretation_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "unnatural_in_context_learning_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "vitaminc_fact_verification_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "what_is_the_tao_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "which_wiki_edit_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "winowhy_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "word_sorting_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        },
+        "word_unscrambling_zero_shot": {
+            "question": "NaN",
+            "options": "NaN"
+        }
+    }
+}

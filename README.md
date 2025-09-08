@@ -1,6 +1,7 @@
 # MBTI-in-Thoughts
 
 <div align="center">
+
 **[Setup Guide](#setup)** |
 **[Documentation](#documentation)** |
 **[Citations](#citations)** |
@@ -13,7 +14,7 @@
 
 This is the official implementation of [Psychologically Enhanced AI Agents](https://arxiv.org/abs/2509.04343).
 
-MBTI-in-Thoughts is a framework for enhancing the effectiveness of Large Language Model (LLM) agents through psychologically grounded personality conditioning.
+MBTI-in-Thoughts (MiT) is a framework for enhancing the effectiveness of Large Language Model (LLM) agents through psychologically grounded personality conditioning.
 Drawing on the Myers–Briggs Type Indicator (MBTI), our method primes agents with distinct personality archetypes via prompt engineering, enabling control over behavior along two foundational axes of human psychology, cognition and affect.
 Our framework supports experimenting with structured multi-agent communication protocols.
 To ensure trait persistence, we integrate the official 16Personalities test for automated verification.
@@ -72,15 +73,13 @@ When using this in your work, please reference us with the citation provided bel
   <img src="paper/pics/overview_web.svg" width="95%">
 </p>
 
-We describe the MBTI-in-Thoughts (MiT) framework.
-It consists of two core components: (1) individual agent priming, where LLMs are conditioned with psychological profiles via structured prompts and validated using standardized personality assessments; and (2) structured multi-agent communication, where we implement progressively expressive interaction protocols (from isolated voting to decentralized dialogue with self-reflective memory) to study the effects of personality on group reasoning dynamics.
+The MBTI-in-Thoughts (MiT) framework consists of two core components: (1) individual agent priming, where LLMs are conditioned with psychological profiles via structured prompts and validated using standardized personality assessments; and (2) structured multi-agent communication, where we implement progressively expressive interaction protocols (from isolated voting to decentralized dialogue with self-reflective memory) to study the effects of personality on group reasoning dynamics.
 
 
 ### Priming Individual Agents
 
 MiT conditions an LLM agent to adopt a specified psychological profile by combining prompt-based priming with standardized behavioral evaluation.
 The process consists of two key stages: (1) injecting personality priors through a structured prompt; and (2) verifying the agent's behavioral alignment using an external psychometric test.
-We now detail these stages.
 
 
 #### Instilling Psychological Profile

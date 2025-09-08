@@ -5,7 +5,7 @@
 **[Setup Guide](#setup)** |
 **[Documentation](#documentation)** |
 **[Citations](#citations)** |
-**[Framework](high-level-framework-description)**
+**[Framework](#high-level-framework-description)**
 </div>
 
 <p align="center">

@@ -71,9 +71,8 @@ def solve_task(dataset_name, dataset_config, model_name: str, agent_types_string
     Each agent gets one vote and the task will be solved by the majority vote.
 
     Args:
-        task_desciption (_type_): _description_
-        model_name (_type_): _description_
-        agent_types_strings (list, optional): _description_. Defaults to [].
+        model_name (str): Name of the language model.
+        agent_types_strings (List[str]): List of the MBTI types for the agents.
     """
     model = get_model(model_name = model_name, max_new_tokens = 100)
     structure = TypedDict('State', {'SOLUTION': str, 'SOLUTION EXPLANATION': str}, total=True)

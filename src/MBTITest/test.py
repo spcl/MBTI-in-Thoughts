@@ -110,6 +110,10 @@ class MBTITestPrompter(prompter.Prompter):
         """
         Generate a generate prompt for the language model.
 
+        :param num_branches: Number of responses to generate. Not used.
+        :type num_branches: int
+        :param statement: MBTI statement for questioning the language model.
+        :type statement: str
         :param method: Method for which the generate prompt is generated. Should be "io".
         :type method: str
         :param current: The intermediate solution. Not used.
@@ -175,7 +179,7 @@ class MBTITestPrompter(prompter.Prompter):
 
 class MBTITestParser(parser.Parser):
     """
-    DocMergeParser provides the parsing of language model reponses specific to the
+    MBTITestParser provides the parsing of language model reponses specific to the
     MBTI test.
 
     Inherits from the Parser class and implements its abstract methods.
@@ -366,7 +370,7 @@ def run(
     :param data_ids: Indices of the sample to be run.
     :type data_ids: List[int]
     :param methods: List of functions to generate Graphs of Operations.
-    :type methods: Each function generates a Graph of Operation.
+    :type methods: List[Callable[[], operations.GraphOfOperations]]
     :param budget: Language model budget for the execution in dollars.
     :type budget: float
     :param lm_name: Name of the language model to be used.

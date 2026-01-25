@@ -80,9 +80,6 @@ class BaseGameStructure(ABC):
 class GameState(TypedDict):
     """
     State for the games, includes actions taken and messages exchanged by agents.
-
-    Args:
-        TypedDict ([type]): [description]
     """
     total_rounds: int
     current_round: int

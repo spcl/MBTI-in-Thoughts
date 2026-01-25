@@ -17,7 +17,7 @@ evaluate_stories.sh <total_stories> <number_of_executions> <round_number> [datas
 
 ## Additional Functionalities
 
-We provide a wrapper script to either the number of words of the short stories or delete them if their word count is not within certain bounds.
+We provide a wrapper script to either count the number of words of the short stories or delete them if their word count is not within certain bounds.
 ```bash
 usage: clean_short_stories.py [-h] [--action {clean,count}] [--path PATH]
 

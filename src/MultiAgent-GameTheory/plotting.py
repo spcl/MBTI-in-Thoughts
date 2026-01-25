@@ -1452,7 +1452,8 @@ def plot_from_list(df, plots_path, plot_functions, df_type=None):
         except Exception as e:
             print(f"Error in {func.__name__}: {e}")
             continue
-        
+
+
 def stripplot_test():
     df_type = 'model'
     df, plots_path = import_df_and_plot_path(df_type)
@@ -1461,6 +1462,7 @@ def stripplot_test():
     df_agent_functions = [plot_truth_strip_dichotomy]
     # Run the plotting functions
     plot_from_list(df_agents, plots_path, df_agent_functions, df_type)
+
         
 # Run whats runnable
 def PD_plots():
@@ -1537,6 +1539,7 @@ def model_plots():
     ]
     # Run the plotting functions
     plot_from_list(df_agents_og, plots_path, df_agent_functions, df_type)
+
 
 def game_plots():
     df_type = 'game'

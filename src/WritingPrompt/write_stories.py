@@ -23,8 +23,8 @@ def save_story(path,
                 model_output, 
                 usage_metadata, 
                 temperature):
-    """Save the story as a json file."""
-    # save story as json file
+    """Save the story as a JSON file."""
+    # Save story as JSON file
     contents = {
         "story_prompt": story_prompt,
         "story_id": story_id,
@@ -56,12 +56,12 @@ if __name__ == '__main__':
                         'ESFP',
                         'EXPERT',
                         'NONE']
-    # load a personality type from general_priming.json
+    # Load a personality type from general_priming.json
     # or use the default personality type
     with open('../../priming/priming_mbti.json', 'r') as f:
         personality_types_descriptions = json.load(f)
 
-    # load all contents of the file prompts.txt into a single string
+    # Load all contents of the file prompts.txt into a single string
     with open('prompts.txt', 'r') as f:
         prompt_template = f.read()
 
@@ -114,10 +114,10 @@ if __name__ == '__main__':
                                         model_name=model_name)
             # Add 1 second delay after each write_story call
             time.sleep(1)
-            # format i to be 6 digits long
+            # Format i to be 6 digits long
             story_index_to_save_file = str(story_id).zfill(6)
             save_directory = ''.join([output_dir, '/',personality_type])
-            # create directory if it does not exist
+            # Create directory if it does not exist
             if not os.path.exists(save_directory):
                 os.makedirs(save_directory)
             save_story(path= ''.join([save_directory, '/', story_index_to_save_file, '_', personality_type, '.json']),

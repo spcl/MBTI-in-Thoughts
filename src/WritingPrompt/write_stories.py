@@ -16,15 +16,18 @@ from TopUpvotedStoriesLoaderDataset import TopUpvotedStoriesLoaderDataset
 from tqdm import tqdm
 from WritingPromptDataset import WritingPromptDataset
 
-def save_story(path,
-                story_prompt, 
-                story_id,
-                personality_type, 
-                model_output, 
-                usage_metadata, 
-                temperature):
-    """Save the story as a JSON file."""
-    # Save story as JSON file
+def save_story(
+    path,
+    story_prompt,
+    story_id,
+    personality_type,
+    model_output,
+    usage_metadata,
+    temperature
+) -> None:
+    """
+    Save the story as a JSON file.
+    """
     contents = {
         "story_prompt": story_prompt,
         "story_id": story_id,
@@ -56,7 +59,7 @@ if __name__ == '__main__':
                         'ESFP',
                         'EXPERT',
                         'NONE']
-    # Load a personality type from general_priming.json
+    # Load a personality type from a JSON file
     # or use the default personality type
     with open('../../priming/priming_mbti.json', 'r') as f:
         personality_types_descriptions = json.load(f)

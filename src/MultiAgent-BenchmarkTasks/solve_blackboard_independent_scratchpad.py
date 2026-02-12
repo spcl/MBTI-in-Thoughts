@@ -104,11 +104,11 @@ def create_agent_network_node_function(agent_names, agent_name, agent_type, mode
 
 def solve_task(dataset_name, dataset_config, model_name, agent_types_strings, n_tasks = -1, runs = 1): 
     """
-    _description_
+    Solve the given task.
+
     Args:
-        task_description (_type_): _description_
-        model_name (_type_): model name
-        agent_types_strings (_type_): strings of the agent types
+        model_name (str): Name of the language model.
+        agent_types_strings (List[str]): List of the MBTI types for the agents.
     """
     model = get_model(model_name = model_name)
     agents_info = {f"agent{i}": agent_type for i, agent_type in enumerate(agent_types_strings)}

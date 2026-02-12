@@ -19,6 +19,6 @@ You can adapt [run_big_bench_SOCKET.sh](run_big_bench_SOCKET.sh) to your needs b
 - `--model`: Model name. Example: `gpt-4o-mini`.
 - `--agent_types`: List of agent types. Example: `INTJ ENFP ISTP`.
 
-### Possible tasks from the datasets
+### Possible Tasks from the Datasets
 
 - Tasks that you can run are listed in [data/task_descriptions](data/task_descriptions).

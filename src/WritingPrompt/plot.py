@@ -82,7 +82,7 @@ def plot_metrics(metrics, evaluators, save_path):
             if not os.path.exists('plots'):
                 os.makedirs('plots')
             plot_save_path = f'plots/{save_path}/{metric_name}/'
-            # create save path if it does not exist
+            # Create save path if it does not exist
             if not os.path.exists(plot_save_path):
                 os.makedirs(plot_save_path)
             fig.tight_layout()
@@ -92,7 +92,7 @@ def plot_metrics(metrics, evaluators, save_path):
 
 def plot_llm_evaluations(metrics, evaluator, save_path):
     metric_items = evaluator.get_metric_names()
-    # remove 'reasoning_for_evaluation' from the list of items to plot
+    # Remove 'reasoning_for_evaluation' from the list of items to plot
     metric_items.remove('reasoning_for_evaluation')
     for item in metric_items:
         plot_metric_distribution(metrics['LLM'], item, save_path=save_path)
@@ -100,7 +100,7 @@ def plot_llm_evaluations(metrics, evaluator, save_path):
 
 def save_llm_evaluatons_tabular(metrics, evaluator, save_path):
     metric_items = evaluator.get_metric_names()
-    # remove 'reasoning_for_evaluation' from the list of items to plot
+    # Remove 'reasoning_for_evaluation' from the list of items to plot
     metric_items.remove('reasoning_for_evaluation')
     for item in metric_items:
         save_metric_distribution_tabular(metrics['LLM'], item, save_path=save_path)  
@@ -138,7 +138,7 @@ def save_metric_distribution_tabular(evaluation_dict, metric, categories=None, u
     rows = []
     for ptype, metrics_dict in evaluation_dict.items():
         if metric not in metrics_dict:
-            continue  # skip if this MBTI type doesn't have data for the metric
+            continue  # Skip if this MBTI type doesn't have data for the metric
         
         answers = metrics_dict[metric]
         total = len(answers)
@@ -224,7 +224,7 @@ def plot_metric_distribution(evaluation_dict, metric, categories=None, use_perce
     rows = []
     for ptype, metrics_dict in evaluation_dict.items():
         if metric not in metrics_dict:
-            continue  # skip if this MBTI type doesn't have data for the metric
+            continue  # Skip if this MBTI type doesn't have data for the metric
         
         answers = metrics_dict[metric]
         total = len(answers)

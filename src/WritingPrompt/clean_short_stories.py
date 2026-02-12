@@ -57,7 +57,7 @@ def count_words_in_stories(path: str) -> None:
     Counts the words in the 'model_output.story' field of JSON files as well as printing some
     statistics. The path can be a single file or a directory.
 
-    :param path: Path to the directory, where the stories are stored.
+    :param path: Path to the directory or a single file.
     :type path: str
     """
     total_word_count = 0

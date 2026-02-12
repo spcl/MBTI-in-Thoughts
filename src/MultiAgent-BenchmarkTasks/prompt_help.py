@@ -51,8 +51,9 @@ def get_mbti_prompt(mbti_type: str):
 def get_network_agent_prompt(MBTI_types):
     """
     This function will return the prompt for the blackboard agents.
+
     Args:
-        MBTI_types (list): The list of MBTI types.
+        MBTI_types (list): List of MBTI types.
     """
     prompt = f"""You are one of the following agents: {MBTI_types}.
 You will be tasked with solving a problem with eachother, so do not be shy to hear everyone out, or have an actual discussion with one another. Once you deem the conversation to be done, end the discussion by giving the solution.  
@@ -68,8 +69,9 @@ You have to:
 def get_scratchpad_agent_prompt(MBTI_types):
     """
     This function will return the prompt for the blackboard agents.
+
     Args:
-        MBTI_types (list): The list of MBTI types.
+        MBTI_types (list): List of MBTI types.
     """
     prompt = f"""You are one of the following agents: {MBTI_types}.
 Before interacting with the other agents, you must first fill in your personal scratchpad with your thoughts and reasoning about the task. Use this scratchpad to organize your ideas and ensure your contributions are well thought out.

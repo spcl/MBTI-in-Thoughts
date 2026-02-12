@@ -20,7 +20,7 @@ from readability import Readability
 from readability.exceptions import ReadabilityException
 from story_generation import evaluate_json_output
 
-# an Evaluator class that other evaluators can inherit from
+# Evaluator class that other evaluators can inherit from
 class Evaluator:
     def __init__(self):
         self.is_numerical = False
@@ -77,7 +77,7 @@ class LLMEvaluator(Evaluator):
         output = prompt_and_model.invoke({"story_to_evaluate": story_to_evaluate})
         evaluation = evaluate_json_output(output.content, self.fixing_parser)
 
-        # return evaluation, output, prompt
+        # Return evaluation, output, prompt
         return evaluation
 
 
